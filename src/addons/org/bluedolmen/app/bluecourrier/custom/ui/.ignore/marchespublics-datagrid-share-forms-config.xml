@@ -1,0 +1,1192 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<alfresco-config>
+	<!-- Forms from SIDE datagrid model -->
+	
+
+	<!-- Input Forms -->
+		<!-- SIDE ETypePiecesMarches Form -->
+		<!-- MarchesPublics:ETypePiecesMarches CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:ETypePiecesMarches">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.ETypePiecesMarches.AspectMarche"
+				 
+				 
+				 label="AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.ETypePiecesMarches.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:ETypePiecesMarches EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:ETypePiecesMarches">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.ETypePiecesMarches.AspectMarche"
+				 
+				 
+				 label="AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.ETypePiecesMarches.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE EDelaiPaiement Form -->
+		<!-- MarchesPublics:EDelaiPaiement CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:EDelaiPaiement">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.EDelaiPaiement.AspectMarche"
+				 
+				 
+				 label="EDelaiPaiement.AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.EDelaiPaiement.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:EDelaiPaiement EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:EDelaiPaiement">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.EDelaiPaiement.AspectMarche"
+				 
+				 
+				 label="EDelaiPaiement.AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.EDelaiPaiement.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE EFormePrix Form -->
+		<!-- MarchesPublics:EFormePrix CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:EFormePrix">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.EFormePrix.AspectMarche"
+				 
+				 
+				 label="EFormePrix.AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.EFormePrix.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:EFormePrix EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:EFormePrix">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.EFormePrix.AspectMarche"
+				 
+				 
+				 label="EFormePrix.AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.EFormePrix.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE EFormeMarche Form -->
+		<!-- MarchesPublics:EFormeMarche CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:EFormeMarche">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.EFormeMarche.AspectMarche"
+				 
+				 
+				 label="AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.EFormeMarche.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:EFormeMarche EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:EFormeMarche">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.EFormeMarche.AspectMarche"
+				 
+				 
+				 label="AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.EFormeMarche.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE EModePassation Form -->
+		<!-- MarchesPublics:EModePassation CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:EModePassation">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.EModePassation.AspectMarche"
+				 
+				 
+				 label="EModePassation.AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.EModePassation.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:EModePassation EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:EModePassation">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.EModePassation.AspectMarche"
+				 
+				 
+				 label="EModePassation.AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.EModePassation.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE Service Form -->
+		<!-- MarchesPublics:Service CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:Service">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.Service.AspectMarche"
+				 
+				 
+				 label="AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.Service.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:Service EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:Service">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.Service.AspectMarche"
+				 
+				 
+				 label="AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.Service.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE Collectivite Form -->
+		<!-- MarchesPublics:Collectivite CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:Collectivite">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.Collectivite.AspectMarche"
+				 
+				 
+				 label="AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.Collectivite.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:Collectivite EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:Collectivite">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.Collectivite.AspectMarche"
+				 
+				 
+				 label="AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.Collectivite.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE Egestionnaire Form -->
+		<!-- MarchesPublics:EGestionnaireDuPaiement CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:EGestionnaireDuPaiement">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.Egestionnaire.AspectMarche"
+				 
+				 
+				 label="AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.Egestionnaire.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:EGestionnaireDuPaiement EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:EGestionnaireDuPaiement">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.Egestionnaire.AspectMarche"
+				 
+				 
+				 label="AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.Egestionnaire.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE ETypeMarche Form -->
+		<!-- MarchesPublics:ETypeMarche CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:ETypeMarche">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.ETypeMarche.AspectMarche"
+				 
+				 
+				 label="AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.ETypeMarche.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:ETypeMarche EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:ETypeMarche">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.ETypeMarche.AspectMarche"
+				 
+				 
+				 label="AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.ETypeMarche.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE Organisation Form -->
+		<!-- MarchesPublics:Organisation CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:Organisation">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:Organisation_siret"  force="true" />
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.Organisation.AspectMarche"
+				 
+				 
+				 label="Organisation.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:Organisation_siret"
+				set="datagrid.Organisation.AspectMarche"
+				label="siret"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="cm:name"
+				set="datagrid.Organisation.AspectMarche"
+				label="Name"
+				mandatory="true"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:Organisation EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:Organisation">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:Organisation_siret"  force="true" />
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.Organisation.AspectMarche"
+				 
+				 
+				 label="Organisation.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:Organisation_siret"
+				set="datagrid.Organisation.AspectMarche"
+				label="siret"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="cm:name"
+				set="datagrid.Organisation.AspectMarche"
+				label="Name"
+				mandatory="true"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE EDateEtNumDeliberation Form -->
+		<!-- MarchesPublics:EDateEtNumDeliberation CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:EDateEtNumDeliberation">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.EDateEtNumDeliberation.AspectMarche"
+				 
+				 
+				 label="EDateEtNumDeliberation.AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.EDateEtNumDeliberation.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:EDateEtNumDeliberation EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:EDateEtNumDeliberation">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.EDateEtNumDeliberation.AspectMarche"
+				 
+				 
+				 label="EDateEtNumDeliberation.AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.EDateEtNumDeliberation.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE ECategoriesDuMarche Form -->
+		<!-- MarchesPublics:ECategoriesDuMarche CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:ECategoriesDuMarche">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.ECategoriesDuMarche.AspectMarche"
+				 
+				 
+				 label="ECategoriesDuMarche.AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.ECategoriesDuMarche.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:ECategoriesDuMarche EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:ECategoriesDuMarche">
+			<forms>
+				<form		id="datagrid">
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="datagrid.ECategoriesDuMarche.AspectMarche"
+				 
+				 
+				 label="ECategoriesDuMarche.AspectMarche"
+				  />
+
+					<field id="cm:name"
+				set="datagrid.ECategoriesDuMarche.AspectMarche"
+				label="Name"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+
+	
+	<!-- Search Forms -->
+	
+	
+	<!-- Form Workflows -->
+	
+</alfresco-config>

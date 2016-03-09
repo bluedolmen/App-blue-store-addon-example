@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<alfresco-config>
+	<!-- Forms from SIDE search-search model -->
+	
+
+	<!-- Input Forms -->
+	
+	
+	<!-- Search Forms -->
+		<!-- MarchesPublics:Marche SEARCH -->
+		<config evaluator="model-type" condition="MarchesPublics:Marche">
+			<forms>
+				<form		id="search">
+				
+					<!---->
+					<!-- 0-->
+					 	<edit-form template="/side/templates/search-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:Marche_concerneCollectivite_Collectivite"  force="true" />
+						<show id="MarchesPublics:Marche_anneeDepart"  force="true" />
+						<show id="MarchesPublics:Marche_dateNotification"  force="true" />
+						<show id="MarchesPublics:Marche_piloteParService_Service"  force="true" />
+						<show id="MarchesPublics:Marche_numeroMarche"  force="true" />
+						<show id="MarchesPublics:Marche_titulaire_Organisation"  force="true" />
+						<show id="MarchesPublics:Marche_gestionnaire_EGestionnaireDuPaiement"  force="true" />
+						<show id="MarchesPublics:Marche_categorieMarche_ECategoriesDuMarche"  force="true" />
+						<show id="MarchesPublics:Marche_typeMarche_ETypeMarche"  force="true" />
+						<show id="MarchesPublics:Marche_objetMarche"  force="true" />
+						<show id="MarchesPublics:Marche_redacteur_person"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="search-search.Marche_Search.recherchePiecesMarchesId"
+				 appearance="title"
+				 
+				 label="Recherche Pièces Marchés"
+				  />
+
+					<field id="MarchesPublics:Marche_concerneCollectivite_Collectivite"
+				set="search-search.Marche_Search.recherchePiecesMarchesId"
+				label="concerneCollectivite"
+			>
+
+
+					<!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					<control-param name="multipleSelectMode">true</control-param>		
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_anneeDepart"
+				set="search-search.Marche_Search.recherchePiecesMarchesId"
+				label="anneeDepart"
+			>
+
+
+						<control>
+							<control-param name="forceEditable">true</control-param>
+						</control>
+			</field>
+					<field id="MarchesPublics:Marche_dateNotification"
+				set="search-search.Marche_Search.recherchePiecesMarchesId"
+				label="dateNotification"
+			>
+
+
+						<control template="/org/alfresco/components/form/controls/daterange.ftl" >
+							<control-param name="forceEditable">true</control-param>
+							<control-param name="search">true</control-param>
+						</control>
+			</field>
+					<field id="MarchesPublics:Marche_piloteParService_Service"
+				set="search-search.Marche_Search.recherchePiecesMarchesId"
+				label="piloteParService"
+			>
+
+
+					<!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					<control-param name="multipleSelectMode">true</control-param>		
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_numeroMarche"
+				set="search-search.Marche_Search.recherchePiecesMarchesId"
+				label="numeroMarche"
+			>
+
+
+						<control>
+							<control-param name="forceEditable">true</control-param>
+						</control>
+			</field>
+					<field id="MarchesPublics:Marche_titulaire_Organisation"
+				set="search-search.Marche_Search.recherchePiecesMarchesId"
+				label="titulaire"
+			>
+
+
+					<!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					<control-param name="multipleSelectMode">true</control-param>		
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_gestionnaire_EGestionnaireDuPaiement"
+				set="search-search.Marche_Search.recherchePiecesMarchesId"
+				label="gestionnaire"
+			>
+
+
+					<!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					<control-param name="multipleSelectMode">true</control-param>		
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_categorieMarche_ECategoriesDuMarche"
+				set="search-search.Marche_Search.recherchePiecesMarchesId"
+				label="categorieMarche"
+			>
+
+
+					<!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					<control-param name="multipleSelectMode">true</control-param>		
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_typeMarche_ETypeMarche"
+				set="search-search.Marche_Search.recherchePiecesMarchesId"
+				label="typeMarche"
+			>
+
+
+					<!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					<control-param name="multipleSelectMode">true</control-param>		
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_objetMarche"
+				set="search-search.Marche_Search.recherchePiecesMarchesId"
+				label="objetMarche"
+			>
+
+
+						<control>
+							<control-param name="forceEditable">true</control-param>
+						</control>
+			</field>
+					<field id="MarchesPublics:Marche_redacteur_person"
+				set="search-search.Marche_Search.recherchePiecesMarchesId"
+				label="redacteur"
+			>
+
+			<control template="/org/alfresco/components/form/controls/authority.ftl">
+				<control-param name="filterTerm"><![CDATA[a*]]></control-param>
+			</control>
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+
+	
+	<!-- Form Workflows -->
+	
+</alfresco-config>

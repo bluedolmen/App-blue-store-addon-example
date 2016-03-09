@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<alfresco-config>
+	<!-- CREATE Mode -->
+	<config evaluator="model-type" condition="BlueCourrierCustom:MailTypes">
+		<forms>
+			<form>
+
+				<field-visibility>
+
+					<show id="cm:name" force="true" />
+					<show id="BlueCourrierCustom:MailTypes_shortLabel" force="true" />
+					<show id="BlueCourrierCustom:MailTypes_longLabel" force="true" />
+				</field-visibility>
+
+				<appearance>
+
+					<set id="mailTypes.default" label="Types de courrier" />
+
+					<field id="cm:name" set="mailTypes.default" mandatory="true" read-only="false">
+						<control template="/org/alfresco/components/form/controls/textfield.ftl"></control>
+					</field>
+					<field id="BlueCourrierCustom:MailTypes_shortLabel" set="mailTypes.default" mandatory="true" read-only="false">
+						<control template="/org/alfresco/components/form/controls/textfield.ftl"></control>
+					</field>
+					<field id="BlueCourrierCustom:MailTypes_longLabel" set="mailTypes.default" mandatory="true" read-only="false">
+						<control template="/org/alfresco/components/form/controls/textfield.ftl"></control>
+					</field>
+				</appearance>
+			</form>
+		</forms>
+	</config>
+	
+	<!-- EDIT Mode -->
+	<config evaluator="node-type" condition="BlueCourrierCustom:MailTypes">
+		<forms>
+			<form>
+
+				<field-visibility>
+
+					<show id="cm:name" force="true" />
+					<show id="BlueCourrierCustom:MailTypes_shortLabel" force="true" />
+					<show id="BlueCourrierCustom:MailTypes_longLabel" force="true" />
+				</field-visibility>
+
+				<appearance>
+
+					<set id="mailTypes.default" label="Types de courrier" />
+
+					<field id="cm:name" set="mailTypes.default" mandatory="true" read-only="false">
+						<control template="/org/alfresco/components/form/controls/textfield.ftl"></control>
+					</field>
+					<field id="BlueCourrierCustom:MailTypes_shortLabel" set="mailTypes.default" mandatory="true" read-only="false">
+						<control template="/org/alfresco/components/form/controls/textfield.ftl"></control>
+					</field>
+					<field id="BlueCourrierCustom:MailTypes_longLabel" set="mailTypes.default" mandatory="true" read-only="false">
+						<control template="/org/alfresco/components/form/controls/textfield.ftl"></control>
+					</field>
+				</appearance>
+			</form>
+		</forms>
+	</config>
+</alfresco-config>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Common" default="packageAndPublish">
+	<description>
+		Packages and publishes your addon on BlueDolmen AppStore.
+
+		Normal usage only requires to update build.properties, in your
+		module's directory, to indicate information about it, and
+		.build-bdas.properties, in your user directory, to indicate
+		your credentials.
+
+		Other properties should not be updated.
+	</description>
+
+	<!-- Main properties files -->
+	<property name="user" value="${user.name}" />
+	<property file="build.properties" />
+	<property file="build.number" />
+
+	<!-- AppStore URLs -->
+	<property name="bdas.host" value="appstore.bluedolmen.com" />
+	<property name="bdas.ws" value="/alfresco/service/bluedolmen/mp/add"/>
+	<property name="secure" value="true"/>
+
+	<!--
+		Create .build-bdas.properties in your user directory, so it is not
+		packaged in your module, to store your credentials:
+
+		bdas.user=My BlueDolmen AppStore username
+		bdas.passwd=My BlueDolmen AppStore password
+
+		According your operating system, store .build-bdas.properties:
+		* on Windoze: in C:\Users\your_user_name
+		* on Linux: in /home/your_user_name
+		* on Mac: in /Users/your_user_name
+	-->
+	<property file="${user.home}/.build-bdas.properties" />
+
+	<!-- ####################################################### -->
+	<!-- Do not update below unless you know what your are doing -->
+	<!-- ####################################################### -->
+
+	<property name="addon.path" value="${addon.groupId}.${addon.moduleId}" />
+	<echo message="The module's absolute id is ${addon.path}" />
+
+	<!-- org.bluedolmen.domain.marchespublics becomes org/bluedolmen/domain/marchespublics -->
+	<loadresource property="src.addon.path">
+	  <propertyresource name="addon.path"/>
+	  <filterchain>
+	    <tokenfilter>
+	      <linetokenizer/>
+	      <replacestring from="." to="/"/>
+	    </tokenfilter>
+	  </filterchain>
+	</loadresource>
+
+	<echo message="The module's absolute path is ${src.addon.path}" />
+
+	<!-- Source directories -->
+	<property name="dist" value="${base}/dist"/>
+	<property name="src.addon.prefix" value="${base}/src/addons" />
+
+	<condition property="bdas.protocol" value="https" else="http">
+		<istrue value="${secure}" />
+	</condition>
+
+	<property name="dist" value="dist"/>
+	<property name="src" value="${src.addon.prefix}/${src.addon.path}"/>
+	<property name="destfile" value="${dist}/${addon.path}.jar"/>
+
+	<property name="curl.windoze" location="${base}/local/bin/curl.exe"/>
+	<property name="curl.macOrLinux" location="/usr/bin/curl"/>
+
+	<condition property="curl.bin" value="${curl.windoze}" else="${curl.macOrLinux}">
+        <os family="windows"/>
+    </condition>
+
+	<target name="generate-buildnumber">
+		<buildnumber/>
+	</target>
+
+	<target name="generate-version">
+		<replaceregexp file="module.yml"
+		               match="version.*:.*\d.(\d*)[^\d]*"
+		               replace="version      : 1.${build.number}"
+		               byline="true"
+		/>
+	</target>
+
+	<target name="generate-header">
+		<delete file="module.yml" />
+		<copy file="module.yml.tpl" tofile="module.yml">
+			<filterset filtersfile="build.properties" />
+		</copy>
+	</target>
+
+	<target name="generate-module" depends="generate-header,generate-version" />
+
+	<target name="packageAndPublish" depends="generate-module, package, publish">
+	</target>
+
+	<target name="package">
+		<jar destfile="${destfile}">
+			<fileset dir="${base}">
+				<include name="META-INF/license.md"/>
+			</fileset>
+			<fileset dir="${src}" >
+				<include name="META-INF/**"/>
+				<exclude name=".ignore/**"/>
+			</fileset>
+			<fileset dir="${src}">
+				<exclude name="META-INF/**"/>
+				<exclude name="**/*.xml-messages.properties"/>
+				<exclude name="**/*.bak"/>
+				<exclude name=".ignore/**"/>
+				<exclude name="**/.gitkeep"/>
+			</fileset>
+		</jar>
+		<buildnumber/>
+	</target>
+
+	<target name="publish">
+		<property name="bdas.url" value="${bdas.protocol}://${bdas.host}${bdas.ws}" />
+		<!--property name="bdas.url" value="${bdas.protocol}://${bdas.user}:${bdas.passwd}@${bdas.host}${bdas.ws}" /-->
+		<echo message="bdas.url = ${bdas.url}"/>
+
+		<echo message="${curl.bin} -u ${bdas.user}:${bdas.passwd} -F module=@${destfile} ${bdas.url}" />
+
+		<exec executable="${curl.bin}">
+			<!-- Following line must be commented in windows -->
+		    <arg value="-u ${bdas.user}:${bdas.passwd}"/>
+			<!--arg value="-F &quot;module=@${destfile}&quot;" /-->
+			<!--arg value="-F &quot;module=@${dist}/${addon.path}.jar&quot;" /-->
+			<arg value="-F 'module=@${dist}/${addon.path}.jar'" />
+			<!--arg value="${bdas.protocol}://${bdas.user}:${bdas.passwd}@${bdas.host}${bdas.ws}" /-->
+			<arg value="${bdas.protocol}://${bdas.host}${bdas.ws}" />
+		</exec>
+	</target>
+
+</project>

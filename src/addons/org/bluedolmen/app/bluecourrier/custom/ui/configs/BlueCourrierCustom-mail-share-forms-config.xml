@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<alfresco-config>
+
+	<config evaluator="node-type" condition="cm:content">
+		<forms>
+			<form id="mail">
+			    <edit-form template="/fdk/templates/tab-edit-form.ftl" />
+				<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+				<field-visibility>
+					<!--
+                       <hide id="bluecourrier:object" force="true" />
+                       -->
+					<show id="BlueCourrierCustom:AspectPerso_type"  force="true" />
+					<show id="BlueCourrierCustom:AspectPerso_specificId"  force="true" />
+					<show id="BlueCourrierCustom:AspectPerso_responseDate"  force="true" />
+				</field-visibility>
+
+				<appearance>
+						<field id="BlueCourrierCustom:AspectPerso_specificId" set="mail.default.Identification" label="Id sp&#233;cifique" mandatory="false" read-only="false">
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+						</control>
+					</field>
+					<field id="BlueCourrierCustom:AspectPerso_responseDate" set="mail.default.Dates" label="Date de r&#233;ponse souhait&#233;e" mandatory="false" read-only="false">
+						<control template="/org/alfresco/components/form/controls/date.ftl">
+						</control>
+					</field>
+					<field id="BlueCourrierCustom:AspectPerso_type" set="mail.default.Classification" label="Type de courrier" mandatory="false" read-only="false">
+						<control template="/org/bluedolmen/components/form/controls/dynamic-dropdown.ftl">
+							<control-param name="datasourceUrl"><![CDATA[bluedolmen/forms/datalist/bluecourrier/BlueCourrierCustom:MailTypes/items?valueProperty=cm:name]]>
+							</control-param>
+						</control>									
+					</field>
+				</appearance>
+			</form>
+		</forms>
+	</config>
+	
+</alfresco-config>

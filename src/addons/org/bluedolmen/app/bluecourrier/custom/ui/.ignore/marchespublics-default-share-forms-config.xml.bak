@@ -1,0 +1,3888 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<alfresco-config>
+	<!-- Forms from SIDE default model -->
+	
+
+	<!-- Input Forms -->
+		<!-- SIDE PieceMarche Form -->
+		<!-- MarchesPublics:PieceMarche CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:PieceMarche">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+						<show id="cm:content"  force="true" />
+						<show id="MarchesPublics:PieceMarche_typePiecesMarches_ETypePiecesMarches"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.PieceMarche.PieceMarche"
+				 
+				 
+				 label-id="form.set.label.default.PieceMarche.PieceMarche"
+				  />
+
+					<field id="cm:name"
+				set="default.PieceMarche.PieceMarche"
+				label-id="form.field.label.default.PieceMarche.PieceMarche.name"
+				mandatory="true"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="cm:content"
+				set="default.PieceMarche.PieceMarche"
+				label-id="form.field.label.default.PieceMarche.PieceMarche.content"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/side/controls/upload.ftl">
+						
+				</control>
+
+			</field>
+					<field id="MarchesPublics:PieceMarche_typePiecesMarches_ETypePiecesMarches"
+				set="default.PieceMarche.PieceMarche"
+				label-id="form.field.label.default.PieceMarche.PieceMarche.typePiecesMarches"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:PieceMarche EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:PieceMarche">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="cm:name"  force="true" />
+						<show id="cm:content"  force="true" />
+						<show id="MarchesPublics:PieceMarche_typePiecesMarches_ETypePiecesMarches"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.PieceMarche.PieceMarche"
+				 
+				 
+				 label-id="form.set.label.default.PieceMarche.PieceMarche"
+				  />
+
+					<field id="cm:name"
+				set="default.PieceMarche.PieceMarche"
+				label-id="form.field.label.default.PieceMarche.PieceMarche.name"
+				mandatory="true"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="cm:content"
+				set="default.PieceMarche.PieceMarche"
+				label-id="form.field.label.default.PieceMarche.PieceMarche.content"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/side/controls/upload.ftl">
+						
+				</control>
+
+			</field>
+					<field id="MarchesPublics:PieceMarche_typePiecesMarches_ETypePiecesMarches"
+				set="default.PieceMarche.PieceMarche"
+				label-id="form.field.label.default.PieceMarche.PieceMarche.typePiecesMarches"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE ETypePiecesMarches Form -->
+		<!-- MarchesPublics:ETypePiecesMarches CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:ETypePiecesMarches">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.ETypePiecesMarches.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.ETypePiecesMarches.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.ETypePiecesMarches.AspectMarche"
+				label-id="form.field.label.default.ETypePiecesMarches.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.ETypePiecesMarches.AspectMarche"
+				label-id="form.field.label.default.ETypePiecesMarches.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:ETypePiecesMarches EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:ETypePiecesMarches">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.ETypePiecesMarches.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.ETypePiecesMarches.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.ETypePiecesMarches.AspectMarche"
+				label-id="form.field.label.default.ETypePiecesMarches.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.ETypePiecesMarches.AspectMarche"
+				label-id="form.field.label.default.ETypePiecesMarches.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE EDelaiPaiement Form -->
+		<!-- MarchesPublics:EDelaiPaiement CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:EDelaiPaiement">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.EDelaiPaiement.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.EDelaiPaiement.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.EDelaiPaiement.AspectMarche"
+				label-id="form.field.label.default.EDelaiPaiement.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.EDelaiPaiement.AspectMarche"
+				label-id="form.field.label.default.EDelaiPaiement.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:EDelaiPaiement EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:EDelaiPaiement">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.EDelaiPaiement.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.EDelaiPaiement.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.EDelaiPaiement.AspectMarche"
+				label-id="form.field.label.default.EDelaiPaiement.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.EDelaiPaiement.AspectMarche"
+				label-id="form.field.label.default.EDelaiPaiement.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE EFormePrix Form -->
+		<!-- MarchesPublics:EFormePrix CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:EFormePrix">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.EFormePrix.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.EFormePrix.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.EFormePrix.AspectMarche"
+				label-id="form.field.label.default.EFormePrix.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.EFormePrix.AspectMarche"
+				label-id="form.field.label.default.EFormePrix.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:EFormePrix EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:EFormePrix">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.EFormePrix.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.EFormePrix.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.EFormePrix.AspectMarche"
+				label-id="form.field.label.default.EFormePrix.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.EFormePrix.AspectMarche"
+				label-id="form.field.label.default.EFormePrix.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE EFormeMarche Form -->
+		<!-- MarchesPublics:EFormeMarche CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:EFormeMarche">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.EFormeMarche.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.EFormeMarche.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.EFormeMarche.AspectMarche"
+				label-id="form.field.label.default.EFormeMarche.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.EFormeMarche.AspectMarche"
+				label-id="form.field.label.default.EFormeMarche.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:EFormeMarche EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:EFormeMarche">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.EFormeMarche.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.EFormeMarche.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.EFormeMarche.AspectMarche"
+				label-id="form.field.label.default.EFormeMarche.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.EFormeMarche.AspectMarche"
+				label-id="form.field.label.default.EFormeMarche.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE EModePassation Form -->
+		<!-- MarchesPublics:EModePassation CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:EModePassation">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.EModePassation.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.EModePassation.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.EModePassation.AspectMarche"
+				label-id="form.field.label.default.EModePassation.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.EModePassation.AspectMarche"
+				label-id="form.field.label.default.EModePassation.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:EModePassation EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:EModePassation">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.EModePassation.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.EModePassation.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.EModePassation.AspectMarche"
+				label-id="form.field.label.default.EModePassation.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.EModePassation.AspectMarche"
+				label-id="form.field.label.default.EModePassation.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE Service Form -->
+		<!-- MarchesPublics:Service CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:Service">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.Service.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.Service.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.Service.AspectMarche"
+				label-id="form.field.label.default.Service.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.Service.AspectMarche"
+				label-id="form.field.label.default.Service.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:Service EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:Service">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.Service.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.Service.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.Service.AspectMarche"
+				label-id="form.field.label.default.Service.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.Service.AspectMarche"
+				label-id="form.field.label.default.Service.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE Collectivite Form -->
+		<!-- MarchesPublics:Collectivite CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:Collectivite">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.Collectivite.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.Collectivite.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.Collectivite.AspectMarche"
+				label-id="form.field.label.default.Collectivite.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.Collectivite.AspectMarche"
+				label-id="form.field.label.default.Collectivite.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:Collectivite EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:Collectivite">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.Collectivite.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.Collectivite.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.Collectivite.AspectMarche"
+				label-id="form.field.label.default.Collectivite.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.Collectivite.AspectMarche"
+				label-id="form.field.label.default.Collectivite.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE Egestionnaire Form -->
+		<!-- MarchesPublics:EGestionnaireDuPaiement CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:EGestionnaireDuPaiement">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.Egestionnaire.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.Egestionnaire.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.Egestionnaire.AspectMarche"
+				label-id="form.field.label.default.Egestionnaire.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.Egestionnaire.AspectMarche"
+				label-id="form.field.label.default.Egestionnaire.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:EGestionnaireDuPaiement EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:EGestionnaireDuPaiement">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.Egestionnaire.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.Egestionnaire.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.Egestionnaire.AspectMarche"
+				label-id="form.field.label.default.Egestionnaire.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.Egestionnaire.AspectMarche"
+				label-id="form.field.label.default.Egestionnaire.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE ETypeMarche Form -->
+		<!-- MarchesPublics:ETypeMarche CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:ETypeMarche">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.ETypeMarche.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.ETypeMarche.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.ETypeMarche.AspectMarche"
+				label-id="form.field.label.default.ETypeMarche.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.ETypeMarche.AspectMarche"
+				label-id="form.field.label.default.ETypeMarche.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:ETypeMarche EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:ETypeMarche">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.ETypeMarche.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.ETypeMarche.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.ETypeMarche.AspectMarche"
+				label-id="form.field.label.default.ETypeMarche.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.ETypeMarche.AspectMarche"
+				label-id="form.field.label.default.ETypeMarche.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE Organisation Form -->
+		<!-- MarchesPublics:Organisation CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:Organisation">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+						<show id="MarchesPublics:Organisation_siret"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.Organisation.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.Organisation.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.Organisation.AspectMarche"
+				label-id="form.field.label.default.Organisation.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.Organisation.AspectMarche"
+				label-id="form.field.label.default.Organisation.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Organisation_siret"
+				set="default.Organisation.AspectMarche"
+				label-id="form.field.label.default.Organisation.AspectMarche.siret"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:Organisation EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:Organisation">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+						<show id="MarchesPublics:Organisation_siret"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.Organisation.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.Organisation.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.Organisation.AspectMarche"
+				label-id="form.field.label.default.Organisation.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.Organisation.AspectMarche"
+				label-id="form.field.label.default.Organisation.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Organisation_siret"
+				set="default.Organisation.AspectMarche"
+				label-id="form.field.label.default.Organisation.AspectMarche.siret"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE Marche Form -->
+		<!-- MarchesPublics:Marche CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:Marche">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:Marche_concerneCollectivite_Collectivite"  force="true" />
+						<show id="MarchesPublics:Marche_gestionnaire_EGestionnaireDuPaiement"  force="true" />
+						<show id="MarchesPublics:Marche_piloteParService_Service"  force="true" />
+						<show id="MarchesPublics:Marche_numeroMarche"  force="true" />
+						<show id="MarchesPublics:Marche_anneeDepart"  force="true" />
+						<show id="MarchesPublics:Marche_categorieMarche_ECategoriesDuMarche"  force="true" />
+						<show id="MarchesPublics:Marche_formeMarche_EFormeMarche"  force="true" />
+						<show id="MarchesPublics:Marche_objetMarche"  force="true" />
+						<show id="MarchesPublics:Marche_titulaire_Organisation"  force="true" />
+						<show id="MarchesPublics:Marche_soustraitantdeclare"  force="true" />
+						<show id="MarchesPublics:Marche_montantInitial"  force="true" />
+						<show id="MarchesPublics:Marche_montantMinimum"  force="true" />
+						<show id="MarchesPublics:Marche_montantMaximum"  force="true" />
+						<show id="MarchesPublics:Marche_marcheBCSansMiniMaxi"  force="true" />
+						<show id="MarchesPublics:Marche_nbTranche"  force="true" />
+						<show id="MarchesPublics:Marche_montantTConditionnelle"  force="true" />
+						<show id="MarchesPublics:Marche_dureeInitiale"  force="true" />
+						<show id="MarchesPublics:Marche_typeMarche_ETypeMarche"  force="true" />
+						<show id="MarchesPublics:Marche_modePassation_EModePassation"  force="true" />
+						<show id="MarchesPublics:Marche_formePrix_EFormePrix"  force="true" />
+						<show id="MarchesPublics:Marche_moisM0"  force="true" />
+						<show id="MarchesPublics:Marche_delaiPaiement_EDelaiPaiement"  force="true" />
+						<show id="MarchesPublics:Marche_dateEnvoiPublication"  force="true" />
+						<show id="MarchesPublics:Marche_dateNotification"  force="true" />
+						<show id="MarchesPublics:Marche_dateDebutExecution"  force="true" />
+						<show id="MarchesPublics:Marche_dateEtNumDeliberation_EDateEtNumDeliberation"  force="true" />
+						<show id="MarchesPublics:Marche_nbReconduction"  force="true" />
+						<show id="MarchesPublics:Marche_dateReconduction"  force="true" />
+						<show id="MarchesPublics:Marche_delaiPreavisReconduction"  force="true" />
+						<show id="MarchesPublics:Marche_maitreOeuvre_Organisation"  force="true" />
+						<show id="MarchesPublics:Marche_ct_Organisation"  force="true" />
+						<show id="MarchesPublics:Marche_opc_Organisation"  force="true" />
+						<show id="MarchesPublics:Marche_bureauEtude_Organisation"  force="true" />
+						<show id="MarchesPublics:Marche_csps_Organisation"  force="true" />
+						<show id="MarchesPublics:Marche_redacteur_person"  force="true" />
+						<show id="MarchesPublics:Marche_assistant_person"  force="true" />
+						<show id="MarchesPublics:Marche_responsableTechnique_person"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.Marche.generaliteId"
+				 
+				 
+				 label-id="form.set.label.default.Marche.generaliteId"
+				  />
+
+			<set id="default.Marche.montantsId"
+				 
+				 
+				 label-id="form.set.label.default.Marche.montantsId"
+				  />
+
+					<field id="MarchesPublics:Marche_montantInitial"
+				set="default.Marche.montantsId"
+				label-id="form.field.label.default.Marche.montantsId.montantInitial"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/number.ftl">
+					
+					
+					
+					
+					
+					
+				</control>
+				
+			</field>
+					<field id="MarchesPublics:Marche_montantMinimum"
+				set="default.Marche.montantsId"
+				label-id="form.field.label.default.Marche.montantsId.montantMinimun"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/number.ftl">
+					
+					
+					
+					
+					
+					
+				</control>
+				
+			</field>
+					<field id="MarchesPublics:Marche_montantMaximum"
+				set="default.Marche.montantsId"
+				label-id="form.field.label.default.Marche.montantsId.montantMaximum"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/number.ftl">
+					
+					
+					
+					
+					
+					
+				</control>
+				
+			</field>
+					<field id="MarchesPublics:Marche_marcheBCSansMiniMaxi"
+				set="default.Marche.montantsId"
+				label-id="form.field.label.default.Marche.montantsId.marcheBCSansMiniMaxi"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/checkbox.ftl">
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_nbTranche"
+				set="default.Marche.montantsId"
+				label-id="form.field.label.default.Marche.montantsId.nbTranche"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/number.ftl">
+					
+					
+					
+					
+					
+					
+				</control>
+				
+			</field>
+					<field id="MarchesPublics:Marche_montantTConditionnelle"
+				set="default.Marche.montantsId"
+				label-id="form.field.label.default.Marche.montantsId.montantTConditionnelle"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/number.ftl">
+					
+					
+					
+					
+					
+					
+				</control>
+				
+			</field>
+			<set id="default.Marche.caracteristiquesId"
+				 
+				 
+				 label-id="form.set.label.default.Marche.caracteristiquesId"
+				  />
+
+			<set id="default.Marche.dateId"
+				 
+				 
+				 label-id="form.set.label.default.Marche.dateId"
+				  />
+
+			<set id="default.Marche.contactsId"
+				 
+				 
+				 label-id="form.set.label.default.Marche.contactsId"
+				  />
+
+			<set id="default.Marche.generaliteId.diversGeneralitesId"
+				 appearance="whitespace"
+				 
+				 label-id="form.set.label.default.Marche.generaliteId.diversGeneralitesId"
+				  parent="default.Marche.generaliteId" />
+
+					<field id="MarchesPublics:Marche_concerneCollectivite_Collectivite"
+				set="default.Marche.generaliteId.diversGeneralitesId"
+				label-id="form.field.label.default.Marche.generaliteId.diversGeneralitesId.concerneCollectivite"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_gestionnaire_EGestionnaireDuPaiement"
+				set="default.Marche.generaliteId.diversGeneralitesId"
+				label-id="form.field.label.default.Marche.generaliteId.diversGeneralitesId.gestionnaire"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_piloteParService_Service"
+				set="default.Marche.generaliteId.diversGeneralitesId"
+				label-id="form.field.label.default.Marche.generaliteId.diversGeneralitesId.piloteParService"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+			<set id="default.Marche.generaliteId.numeroMarcheId"
+				 appearance="whitespace"
+				 
+				 label-id="form.set.label.default.Marche.generaliteId.numeroMarcheId"
+				  parent="default.Marche.generaliteId" />
+
+					<field id="MarchesPublics:Marche_numeroMarche"
+				set="default.Marche.generaliteId.numeroMarcheId"
+				label-id="form.field.label.default.Marche.generaliteId.numeroMarcheId.numeroMarche"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_anneeDepart"
+				set="default.Marche.generaliteId.numeroMarcheId"
+				label-id="form.field.label.default.Marche.generaliteId.numeroMarcheId.anneeDepart"
+				mandatory="true"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_categorieMarche_ECategoriesDuMarche"
+				set="default.Marche.generaliteId.numeroMarcheId"
+				label-id="form.field.label.default.Marche.generaliteId.numeroMarcheId.categorieMarche"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+			<set id="default.Marche.generaliteId.diversMarcheId"
+				 appearance="whitespace"
+				 
+				 label-id="form.set.label.default.Marche.generaliteId.diversMarcheId"
+				  parent="default.Marche.generaliteId" />
+
+					<field id="MarchesPublics:Marche_formeMarche_EFormeMarche"
+				set="default.Marche.generaliteId.diversMarcheId"
+				label-id="form.field.label.default.Marche.generaliteId.diversMarcheId.formeMarche"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_objetMarche"
+				set="default.Marche.generaliteId.diversMarcheId"
+				label-id="form.field.label.default.Marche.generaliteId.diversMarcheId.objetMarche"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+			<set id="default.Marche.generaliteId.titulaireId"
+				 appearance="title"
+				 
+				 label-id="form.set.label.default.Marche.generaliteId.titulaireId"
+				  parent="default.Marche.generaliteId" />
+
+					<field id="MarchesPublics:Marche_titulaire_Organisation"
+				set="default.Marche.generaliteId.titulaireId"
+				label-id="form.field.label.default.Marche.generaliteId.titulaireId.titulaire"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_soustraitantdeclare"
+				set="default.Marche.generaliteId.titulaireId"
+				label-id="form.field.label.default.Marche.generaliteId.titulaireId.soustraitantdeclare"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+			<set id="default.Marche.caracteristiquesId.dureeInitialeId"
+				 appearance="title"
+				 
+				 label-id="form.set.label.default.Marche.caracteristiquesId.dureeInitialeId"
+				  parent="default.Marche.caracteristiquesId" />
+
+					<field id="MarchesPublics:Marche_dureeInitiale"
+				set="default.Marche.caracteristiquesId.dureeInitialeId"
+				label-id="form.field.label.default.Marche.caracteristiquesId.dureeInitialeId.dureeInitiale"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+			<set id="default.Marche.caracteristiquesId.informationsId"
+				 appearance="title"
+				 
+				 label-id="form.set.label.default.Marche.caracteristiquesId.informationsId"
+				  parent="default.Marche.caracteristiquesId" />
+
+					<field id="MarchesPublics:Marche_typeMarche_ETypeMarche"
+				set="default.Marche.caracteristiquesId.informationsId"
+				label-id="form.field.label.default.Marche.caracteristiquesId.informationsId.typeMarche"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_modePassation_EModePassation"
+				set="default.Marche.caracteristiquesId.informationsId"
+				label-id="form.field.label.default.Marche.caracteristiquesId.informationsId.modePassation"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_formePrix_EFormePrix"
+				set="default.Marche.caracteristiquesId.informationsId"
+				label-id="form.field.label.default.Marche.caracteristiquesId.informationsId.formePrix"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+			<set id="default.Marche.caracteristiquesId.conditionsPaiementsId"
+				 appearance="title"
+				 
+				 label-id="form.set.label.default.Marche.caracteristiquesId.conditionsPaiementsId"
+				  parent="default.Marche.caracteristiquesId" />
+
+					<field id="MarchesPublics:Marche_moisM0"
+				set="default.Marche.caracteristiquesId.conditionsPaiementsId"
+				label-id="form.field.label.default.Marche.caracteristiquesId.conditionsPaiementsId.moisM0"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/date.ftl">
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_delaiPaiement_EDelaiPaiement"
+				set="default.Marche.caracteristiquesId.conditionsPaiementsId"
+				label-id="form.field.label.default.Marche.caracteristiquesId.conditionsPaiementsId.delaiPaiement"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+			<set id="default.Marche.dateId.publiciteId"
+				 appearance="title"
+				 
+				 label-id="form.set.label.default.Marche.dateId.publiciteId"
+				  parent="default.Marche.dateId" />
+
+					<field id="MarchesPublics:Marche_dateEnvoiPublication"
+				set="default.Marche.dateId.publiciteId"
+				label-id="form.field.label.default.Marche.dateId.publiciteId.dateEnvoiPublication"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/date.ftl">
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_dateNotification"
+				set="default.Marche.dateId.publiciteId"
+				label-id="form.field.label.default.Marche.dateId.publiciteId.dateNotification"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/date.ftl">
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_dateDebutExecution"
+				set="default.Marche.dateId.publiciteId"
+				label-id="form.field.label.default.Marche.dateId.publiciteId.dateDebutExecution"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/date.ftl">
+					
+					
+					
+				</control>
+
+			</field>
+			<set id="default.Marche.dateId.deliberationId"
+				 appearance="title"
+				 
+				 label-id="form.set.label.default.Marche.dateId.deliberationId"
+				  parent="default.Marche.dateId" />
+
+					<field id="MarchesPublics:Marche_dateEtNumDeliberation_EDateEtNumDeliberation"
+				set="default.Marche.dateId.deliberationId"
+				label-id="form.field.label.default.Marche.dateId.deliberationId.dateEtNumDeliberation"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+			<set id="default.Marche.dateId.reconductionId"
+				 appearance="title"
+				 
+				 label-id="form.set.label.default.Marche.dateId.reconductionId"
+				  parent="default.Marche.dateId" />
+
+					<field id="MarchesPublics:Marche_nbReconduction"
+				set="default.Marche.dateId.reconductionId"
+				label-id="form.field.label.default.Marche.dateId.reconductionId.nbReconduction"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/number.ftl">
+					
+					
+					
+					
+					
+					
+				</control>
+				
+			</field>
+					<field id="MarchesPublics:Marche_dateReconduction"
+				set="default.Marche.dateId.reconductionId"
+				label-id="form.field.label.default.Marche.dateId.reconductionId.dateReconduction"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/date.ftl">
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_delaiPreavisReconduction"
+				set="default.Marche.dateId.reconductionId"
+				label-id="form.field.label.default.Marche.dateId.reconductionId.delaiPreavisReconduction"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/number.ftl">
+					
+					
+					
+					
+					
+					
+				</control>
+				
+			</field>
+			<set id="default.Marche.contactsId.intervenantsId"
+				 appearance="title"
+				 
+				 label-id="form.set.label.default.Marche.contactsId.intervenantsId"
+				  parent="default.Marche.contactsId" />
+
+					<field id="MarchesPublics:Marche_maitreOeuvre_Organisation"
+				set="default.Marche.contactsId.intervenantsId"
+				label-id="form.field.label.default.Marche.contactsId.intervenantsId.maitreOeuvre"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_ct_Organisation"
+				set="default.Marche.contactsId.intervenantsId"
+				label-id="form.field.label.default.Marche.contactsId.intervenantsId.ct"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_opc_Organisation"
+				set="default.Marche.contactsId.intervenantsId"
+				label-id="form.field.label.default.Marche.contactsId.intervenantsId.opc"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_bureauEtude_Organisation"
+				set="default.Marche.contactsId.intervenantsId"
+				label-id="form.field.label.default.Marche.contactsId.intervenantsId.bureauEtude"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_csps_Organisation"
+				set="default.Marche.contactsId.intervenantsId"
+				label-id="form.field.label.default.Marche.contactsId.intervenantsId.csps"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+			<set id="default.Marche.contactsId.responsableAdministratifId"
+				 appearance="title"
+				 
+				 label-id="form.set.label.default.Marche.contactsId.responsableAdministratifId"
+				  parent="default.Marche.contactsId" />
+
+					<field id="MarchesPublics:Marche_redacteur_person"
+				set="default.Marche.contactsId.responsableAdministratifId"
+				label-id="form.field.label.default.Marche.contactsId.responsableAdministratifId.redacteur"
+				mandatory="false"
+				read-only="false"	
+			>
+
+			<control template="/org/alfresco/components/form/controls/authority.ftl">
+				<control-param name="filterTerm"><![CDATA[]]></control-param>
+				<control-param name="startLocation"><![CDATA[ /sys:system/sys:authorities/cm:GROUP_MarchesPublicsRedacteur//*]]></control-param>
+			</control>
+			</field>
+					<field id="MarchesPublics:Marche_assistant_person"
+				set="default.Marche.contactsId.responsableAdministratifId"
+				label-id="form.field.label.default.Marche.contactsId.responsableAdministratifId.assistant"
+				mandatory="false"
+				read-only="false"	
+			>
+
+			<control template="/org/alfresco/components/form/controls/authority.ftl">
+				<control-param name="filterTerm"><![CDATA[]]></control-param>
+				<control-param name="startLocation"><![CDATA[ /sys:system/sys:authorities/cm:GROUP_MarchesPublicsAssistant//*]]></control-param>
+			</control>
+			</field>
+			<set id="default.Marche.contactsId.responsableTechniqueId"
+				 appearance="title"
+				 
+				 label-id="form.set.label.default.Marche.contactsId.responsableTechniqueId"
+				  parent="default.Marche.contactsId" />
+
+					<field id="MarchesPublics:Marche_responsableTechnique_person"
+				set="default.Marche.contactsId.responsableTechniqueId"
+				label-id="form.field.label.default.Marche.contactsId.responsableTechniqueId.responsableTechnique"
+				mandatory="false"
+				read-only="false"	
+			>
+
+			<control template="/org/alfresco/components/form/controls/authority.ftl">
+				<control-param name="filterTerm"><![CDATA[]]></control-param>
+				<control-param name="startLocation"><![CDATA[ /sys:system/sys:authorities//*]]></control-param>
+			</control>
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:Marche EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:Marche">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:Marche_concerneCollectivite_Collectivite"  force="true" />
+						<show id="MarchesPublics:Marche_gestionnaire_EGestionnaireDuPaiement"  force="true" />
+						<show id="MarchesPublics:Marche_piloteParService_Service"  force="true" />
+						<show id="MarchesPublics:Marche_numeroMarche"  force="true" />
+						<show id="MarchesPublics:Marche_anneeDepart"  force="true" />
+						<show id="MarchesPublics:Marche_categorieMarche_ECategoriesDuMarche"  force="true" />
+						<show id="MarchesPublics:Marche_formeMarche_EFormeMarche"  force="true" />
+						<show id="MarchesPublics:Marche_objetMarche"  force="true" />
+						<show id="MarchesPublics:Marche_titulaire_Organisation"  force="true" />
+						<show id="MarchesPublics:Marche_soustraitantdeclare"  force="true" />
+						<show id="MarchesPublics:Marche_montantInitial"  force="true" />
+						<show id="MarchesPublics:Marche_montantMinimum"  force="true" />
+						<show id="MarchesPublics:Marche_montantMaximum"  force="true" />
+						<show id="MarchesPublics:Marche_marcheBCSansMiniMaxi"  force="true" />
+						<show id="MarchesPublics:Marche_nbTranche"  force="true" />
+						<show id="MarchesPublics:Marche_montantTConditionnelle"  force="true" />
+						<show id="MarchesPublics:Marche_dureeInitiale"  force="true" />
+						<show id="MarchesPublics:Marche_typeMarche_ETypeMarche"  force="true" />
+						<show id="MarchesPublics:Marche_modePassation_EModePassation"  force="true" />
+						<show id="MarchesPublics:Marche_formePrix_EFormePrix"  force="true" />
+						<show id="MarchesPublics:Marche_moisM0"  force="true" />
+						<show id="MarchesPublics:Marche_delaiPaiement_EDelaiPaiement"  force="true" />
+						<show id="MarchesPublics:Marche_dateEnvoiPublication"  force="true" />
+						<show id="MarchesPublics:Marche_dateNotification"  force="true" />
+						<show id="MarchesPublics:Marche_dateDebutExecution"  force="true" />
+						<show id="MarchesPublics:Marche_dateEtNumDeliberation_EDateEtNumDeliberation"  force="true" />
+						<show id="MarchesPublics:Marche_nbReconduction"  force="true" />
+						<show id="MarchesPublics:Marche_dateReconduction"  force="true" />
+						<show id="MarchesPublics:Marche_delaiPreavisReconduction"  force="true" />
+						<show id="MarchesPublics:Marche_maitreOeuvre_Organisation"  force="true" />
+						<show id="MarchesPublics:Marche_ct_Organisation"  force="true" />
+						<show id="MarchesPublics:Marche_opc_Organisation"  force="true" />
+						<show id="MarchesPublics:Marche_bureauEtude_Organisation"  force="true" />
+						<show id="MarchesPublics:Marche_csps_Organisation"  force="true" />
+						<show id="MarchesPublics:Marche_redacteur_person"  force="true" />
+						<show id="MarchesPublics:Marche_assistant_person"  force="true" />
+						<show id="MarchesPublics:Marche_responsableTechnique_person"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.Marche.generaliteId"
+				 
+				 
+				 label-id="form.set.label.default.Marche.generaliteId"
+				  />
+
+			<set id="default.Marche.montantsId"
+				 
+				 
+				 label-id="form.set.label.default.Marche.montantsId"
+				  />
+
+					<field id="MarchesPublics:Marche_montantInitial"
+				set="default.Marche.montantsId"
+				label-id="form.field.label.default.Marche.montantsId.montantInitial"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/number.ftl">
+					
+					
+					
+					
+					
+					
+				</control>
+				
+			</field>
+					<field id="MarchesPublics:Marche_montantMinimum"
+				set="default.Marche.montantsId"
+				label-id="form.field.label.default.Marche.montantsId.montantMinimun"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/number.ftl">
+					
+					
+					
+					
+					
+					
+				</control>
+				
+			</field>
+					<field id="MarchesPublics:Marche_montantMaximum"
+				set="default.Marche.montantsId"
+				label-id="form.field.label.default.Marche.montantsId.montantMaximum"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/number.ftl">
+					
+					
+					
+					
+					
+					
+				</control>
+				
+			</field>
+					<field id="MarchesPublics:Marche_marcheBCSansMiniMaxi"
+				set="default.Marche.montantsId"
+				label-id="form.field.label.default.Marche.montantsId.marcheBCSansMiniMaxi"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/checkbox.ftl">
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_nbTranche"
+				set="default.Marche.montantsId"
+				label-id="form.field.label.default.Marche.montantsId.nbTranche"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/number.ftl">
+					
+					
+					
+					
+					
+					
+				</control>
+				
+			</field>
+					<field id="MarchesPublics:Marche_montantTConditionnelle"
+				set="default.Marche.montantsId"
+				label-id="form.field.label.default.Marche.montantsId.montantTConditionnelle"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/number.ftl">
+					
+					
+					
+					
+					
+					
+				</control>
+				
+			</field>
+			<set id="default.Marche.caracteristiquesId"
+				 
+				 
+				 label-id="form.set.label.default.Marche.caracteristiquesId"
+				  />
+
+			<set id="default.Marche.dateId"
+				 
+				 
+				 label-id="form.set.label.default.Marche.dateId"
+				  />
+
+			<set id="default.Marche.contactsId"
+				 
+				 
+				 label-id="form.set.label.default.Marche.contactsId"
+				  />
+
+			<set id="default.Marche.generaliteId.diversGeneralitesId"
+				 appearance="whitespace"
+				 
+				 label-id="form.set.label.default.Marche.generaliteId.diversGeneralitesId"
+				  parent="default.Marche.generaliteId" />
+
+					<field id="MarchesPublics:Marche_concerneCollectivite_Collectivite"
+				set="default.Marche.generaliteId.diversGeneralitesId"
+				label-id="form.field.label.default.Marche.generaliteId.diversGeneralitesId.concerneCollectivite"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_gestionnaire_EGestionnaireDuPaiement"
+				set="default.Marche.generaliteId.diversGeneralitesId"
+				label-id="form.field.label.default.Marche.generaliteId.diversGeneralitesId.gestionnaire"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_piloteParService_Service"
+				set="default.Marche.generaliteId.diversGeneralitesId"
+				label-id="form.field.label.default.Marche.generaliteId.diversGeneralitesId.piloteParService"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+			<set id="default.Marche.generaliteId.numeroMarcheId"
+				 appearance="whitespace"
+				 
+				 label-id="form.set.label.default.Marche.generaliteId.numeroMarcheId"
+				  parent="default.Marche.generaliteId" />
+
+					<field id="MarchesPublics:Marche_numeroMarche"
+				set="default.Marche.generaliteId.numeroMarcheId"
+				label-id="form.field.label.default.Marche.generaliteId.numeroMarcheId.numeroMarche"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_anneeDepart"
+				set="default.Marche.generaliteId.numeroMarcheId"
+				label-id="form.field.label.default.Marche.generaliteId.numeroMarcheId.anneeDepart"
+				mandatory="true"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_categorieMarche_ECategoriesDuMarche"
+				set="default.Marche.generaliteId.numeroMarcheId"
+				label-id="form.field.label.default.Marche.generaliteId.numeroMarcheId.categorieMarche"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+			<set id="default.Marche.generaliteId.diversMarcheId"
+				 appearance="whitespace"
+				 
+				 label-id="form.set.label.default.Marche.generaliteId.diversMarcheId"
+				  parent="default.Marche.generaliteId" />
+
+					<field id="MarchesPublics:Marche_formeMarche_EFormeMarche"
+				set="default.Marche.generaliteId.diversMarcheId"
+				label-id="form.field.label.default.Marche.generaliteId.diversMarcheId.formeMarche"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_objetMarche"
+				set="default.Marche.generaliteId.diversMarcheId"
+				label-id="form.field.label.default.Marche.generaliteId.diversMarcheId.objetMarche"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+			<set id="default.Marche.generaliteId.titulaireId"
+				 appearance="title"
+				 
+				 label-id="form.set.label.default.Marche.generaliteId.titulaireId"
+				  parent="default.Marche.generaliteId" />
+
+					<field id="MarchesPublics:Marche_titulaire_Organisation"
+				set="default.Marche.generaliteId.titulaireId"
+				label-id="form.field.label.default.Marche.generaliteId.titulaireId.titulaire"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_soustraitantdeclare"
+				set="default.Marche.generaliteId.titulaireId"
+				label-id="form.field.label.default.Marche.generaliteId.titulaireId.soustraitantdeclare"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+			<set id="default.Marche.caracteristiquesId.dureeInitialeId"
+				 appearance="title"
+				 
+				 label-id="form.set.label.default.Marche.caracteristiquesId.dureeInitialeId"
+				  parent="default.Marche.caracteristiquesId" />
+
+					<field id="MarchesPublics:Marche_dureeInitiale"
+				set="default.Marche.caracteristiquesId.dureeInitialeId"
+				label-id="form.field.label.default.Marche.caracteristiquesId.dureeInitialeId.dureeInitiale"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+			<set id="default.Marche.caracteristiquesId.informationsId"
+				 appearance="title"
+				 
+				 label-id="form.set.label.default.Marche.caracteristiquesId.informationsId"
+				  parent="default.Marche.caracteristiquesId" />
+
+					<field id="MarchesPublics:Marche_typeMarche_ETypeMarche"
+				set="default.Marche.caracteristiquesId.informationsId"
+				label-id="form.field.label.default.Marche.caracteristiquesId.informationsId.typeMarche"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_modePassation_EModePassation"
+				set="default.Marche.caracteristiquesId.informationsId"
+				label-id="form.field.label.default.Marche.caracteristiquesId.informationsId.modePassation"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_formePrix_EFormePrix"
+				set="default.Marche.caracteristiquesId.informationsId"
+				label-id="form.field.label.default.Marche.caracteristiquesId.informationsId.formePrix"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+			<set id="default.Marche.caracteristiquesId.conditionsPaiementsId"
+				 appearance="title"
+				 
+				 label-id="form.set.label.default.Marche.caracteristiquesId.conditionsPaiementsId"
+				  parent="default.Marche.caracteristiquesId" />
+
+					<field id="MarchesPublics:Marche_moisM0"
+				set="default.Marche.caracteristiquesId.conditionsPaiementsId"
+				label-id="form.field.label.default.Marche.caracteristiquesId.conditionsPaiementsId.moisM0"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/date.ftl">
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_delaiPaiement_EDelaiPaiement"
+				set="default.Marche.caracteristiquesId.conditionsPaiementsId"
+				label-id="form.field.label.default.Marche.caracteristiquesId.conditionsPaiementsId.delaiPaiement"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+			<set id="default.Marche.dateId.publiciteId"
+				 appearance="title"
+				 
+				 label-id="form.set.label.default.Marche.dateId.publiciteId"
+				  parent="default.Marche.dateId" />
+
+					<field id="MarchesPublics:Marche_dateEnvoiPublication"
+				set="default.Marche.dateId.publiciteId"
+				label-id="form.field.label.default.Marche.dateId.publiciteId.dateEnvoiPublication"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/date.ftl">
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_dateNotification"
+				set="default.Marche.dateId.publiciteId"
+				label-id="form.field.label.default.Marche.dateId.publiciteId.dateNotification"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/date.ftl">
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_dateDebutExecution"
+				set="default.Marche.dateId.publiciteId"
+				label-id="form.field.label.default.Marche.dateId.publiciteId.dateDebutExecution"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/date.ftl">
+					
+					
+					
+				</control>
+
+			</field>
+			<set id="default.Marche.dateId.deliberationId"
+				 appearance="title"
+				 
+				 label-id="form.set.label.default.Marche.dateId.deliberationId"
+				  parent="default.Marche.dateId" />
+
+					<field id="MarchesPublics:Marche_dateEtNumDeliberation_EDateEtNumDeliberation"
+				set="default.Marche.dateId.deliberationId"
+				label-id="form.field.label.default.Marche.dateId.deliberationId.dateEtNumDeliberation"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+			<set id="default.Marche.dateId.reconductionId"
+				 appearance="title"
+				 
+				 label-id="form.set.label.default.Marche.dateId.reconductionId"
+				  parent="default.Marche.dateId" />
+
+					<field id="MarchesPublics:Marche_nbReconduction"
+				set="default.Marche.dateId.reconductionId"
+				label-id="form.field.label.default.Marche.dateId.reconductionId.nbReconduction"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/number.ftl">
+					
+					
+					
+					
+					
+					
+				</control>
+				
+			</field>
+					<field id="MarchesPublics:Marche_dateReconduction"
+				set="default.Marche.dateId.reconductionId"
+				label-id="form.field.label.default.Marche.dateId.reconductionId.dateReconduction"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/date.ftl">
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_delaiPreavisReconduction"
+				set="default.Marche.dateId.reconductionId"
+				label-id="form.field.label.default.Marche.dateId.reconductionId.delaiPreavisReconduction"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/number.ftl">
+					
+					
+					
+					
+					
+					
+				</control>
+				
+			</field>
+			<set id="default.Marche.contactsId.intervenantsId"
+				 appearance="title"
+				 
+				 label-id="form.set.label.default.Marche.contactsId.intervenantsId"
+				  parent="default.Marche.contactsId" />
+
+					<field id="MarchesPublics:Marche_maitreOeuvre_Organisation"
+				set="default.Marche.contactsId.intervenantsId"
+				label-id="form.field.label.default.Marche.contactsId.intervenantsId.maitreOeuvre"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_ct_Organisation"
+				set="default.Marche.contactsId.intervenantsId"
+				label-id="form.field.label.default.Marche.contactsId.intervenantsId.ct"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_opc_Organisation"
+				set="default.Marche.contactsId.intervenantsId"
+				label-id="form.field.label.default.Marche.contactsId.intervenantsId.opc"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_bureauEtude_Organisation"
+				set="default.Marche.contactsId.intervenantsId"
+				label-id="form.field.label.default.Marche.contactsId.intervenantsId.bureauEtude"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:Marche_csps_Organisation"
+				set="default.Marche.contactsId.intervenantsId"
+				label-id="form.field.label.default.Marche.contactsId.intervenantsId.csps"
+				mandatory="false"
+				read-only="false"	
+			>
+
+					 <!--<extension></extension>-->
+			<!-- widget :Select -->
+				<control template="/side/controls/association-select.ftl" >
+					
+					<control-param name="selectableTypeIsAspect">false</control-param>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+							
+					
+					
+					
+					
+				</control>
+
+			</field>
+			<set id="default.Marche.contactsId.responsableAdministratifId"
+				 appearance="title"
+				 
+				 label-id="form.set.label.default.Marche.contactsId.responsableAdministratifId"
+				  parent="default.Marche.contactsId" />
+
+					<field id="MarchesPublics:Marche_redacteur_person"
+				set="default.Marche.contactsId.responsableAdministratifId"
+				label-id="form.field.label.default.Marche.contactsId.responsableAdministratifId.redacteur"
+				mandatory="false"
+				read-only="false"	
+			>
+
+			<control template="/org/alfresco/components/form/controls/authority.ftl">
+				<control-param name="filterTerm"><![CDATA[]]></control-param>
+				<control-param name="startLocation"><![CDATA[ /sys:system/sys:authorities/cm:GROUP_MarchesPublicsRedacteur//*]]></control-param>
+			</control>
+			</field>
+					<field id="MarchesPublics:Marche_assistant_person"
+				set="default.Marche.contactsId.responsableAdministratifId"
+				label-id="form.field.label.default.Marche.contactsId.responsableAdministratifId.assistant"
+				mandatory="false"
+				read-only="false"	
+			>
+
+			<control template="/org/alfresco/components/form/controls/authority.ftl">
+				<control-param name="filterTerm"><![CDATA[]]></control-param>
+				<control-param name="startLocation"><![CDATA[ /sys:system/sys:authorities/cm:GROUP_MarchesPublicsAssistant//*]]></control-param>
+			</control>
+			</field>
+			<set id="default.Marche.contactsId.responsableTechniqueId"
+				 appearance="title"
+				 
+				 label-id="form.set.label.default.Marche.contactsId.responsableTechniqueId"
+				  parent="default.Marche.contactsId" />
+
+					<field id="MarchesPublics:Marche_responsableTechnique_person"
+				set="default.Marche.contactsId.responsableTechniqueId"
+				label-id="form.field.label.default.Marche.contactsId.responsableTechniqueId.responsableTechnique"
+				mandatory="false"
+				read-only="false"	
+			>
+
+			<control template="/org/alfresco/components/form/controls/authority.ftl">
+				<control-param name="filterTerm"><![CDATA[]]></control-param>
+				<control-param name="startLocation"><![CDATA[ /sys:system/sys:authorities//*]]></control-param>
+			</control>
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE EDateEtNumDeliberation Form -->
+		<!-- MarchesPublics:EDateEtNumDeliberation CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:EDateEtNumDeliberation">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.EDateEtNumDeliberation.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.EDateEtNumDeliberation.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.EDateEtNumDeliberation.AspectMarche"
+				label-id="form.field.label.default.EDateEtNumDeliberation.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.EDateEtNumDeliberation.AspectMarche"
+				label-id="form.field.label.default.EDateEtNumDeliberation.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:EDateEtNumDeliberation EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:EDateEtNumDeliberation">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.EDateEtNumDeliberation.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.EDateEtNumDeliberation.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.EDateEtNumDeliberation.AspectMarche"
+				label-id="form.field.label.default.EDateEtNumDeliberation.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.EDateEtNumDeliberation.AspectMarche"
+				label-id="form.field.label.default.EDateEtNumDeliberation.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- SIDE ECategoriesDuMarche Form -->
+		<!-- MarchesPublics:ECategoriesDuMarche CREATE -->
+		<config evaluator="model-type" condition="MarchesPublics:ECategoriesDuMarche">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.ECategoriesDuMarche.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.ECategoriesDuMarche.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.ECategoriesDuMarche.AspectMarche"
+				label-id="form.field.label.default.ECategoriesDuMarche.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.ECategoriesDuMarche.AspectMarche"
+				label-id="form.field.label.default.ECategoriesDuMarche.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+		<!-- MarchesPublics:ECategoriesDuMarche EDIT -->
+		<config evaluator="node-type" condition="MarchesPublics:ECategoriesDuMarche">
+			<forms>
+				<form>
+				
+					<!---->
+					<!-- 0-->
+						<edit-form template="/fdk/templates/tab-edit-form.ftl" />
+						<create-form template="/fdk/templates/tab-edit-form.ftl" />
+						<view-form template="/fdk/templates/tab-edit-form.ftl" />
+
+
+					
+					<field-visibility>
+						<show id="MarchesPublics:AspectMarche_libelleLong"  force="true" />
+						<show id="MarchesPublics:AspectMarche_libelleCourt"  force="true" />
+
+					</field-visibility>
+					<appearance>
+						<set id="default.ECategoriesDuMarche.AspectMarche"
+				 
+				 
+				 label-id="form.set.label.default.ECategoriesDuMarche.AspectMarche"
+				  />
+
+					<field id="MarchesPublics:AspectMarche_libelleLong"
+				set="default.ECategoriesDuMarche.AspectMarche"
+				label-id="form.field.label.default.ECategoriesDuMarche.AspectMarche.libelleLong"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+					<field id="MarchesPublics:AspectMarche_libelleCourt"
+				set="default.ECategoriesDuMarche.AspectMarche"
+				label-id="form.field.label.default.ECategoriesDuMarche.AspectMarche.libelleCourt"
+				mandatory="false"
+				read-only="false"	
+			>
+
+						<control template="/org/alfresco/components/form/controls/textfield.ftl">
+					
+					
+					
+					
+					
+					
+					
+				</control>
+
+			</field>
+
+					</appearance>
+				</form>
+			</forms>
+		</config>
+
+	
+	<!-- Search Forms -->
+	
+	
+	<!-- Form Workflows -->
+	
+</alfresco-config>

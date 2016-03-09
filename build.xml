@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="All" default="packageAndPublishThemAll">
+	<description>
+		Packages and publishes your addon on BlueDolmen AppStore.
+
+		Normal usage only requires to update build.properties, in your
+		module's directory, to indicate information about it, and
+		.build-bdas.properties, in your user directory, to indicate
+		your credentials.
+
+		Other properties should not be updated.
+	</description>
+
+	<property name="src.addons.app" value="src/addons/org/bluedolmen/app" />
+	<property name="src.addons.domain" value="src/addons/org/bluedolmen/domain" />
+	<property name="src.addons.marchespublics" value="src/addons/org/bluedolmen/domain/marchespublics" />
+	<property name="src.addons.framework" value="src/addons/org/bluedolmen/framework" />
+
+	<target name="packageAndPublishThemAll">
+		<ant target="packageAndPublish" dir="${src.addons.app}/bluecourrier/custom/data/META-INF"/>		
+		<ant target="packageAndPublish" dir="${src.addons.app}/bluecourrier/custom/ui/META-INF"/>		
+	</target>
+
+</project>
