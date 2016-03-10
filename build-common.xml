@@ -128,12 +128,12 @@
 
 		<exec executable="${curl.bin}">
 			<!-- Following line must be commented in windows -->
-		    <arg value="-u ${bdas.user}:${bdas.passwd}"/>
+		  <arg value="-u ${bdas.user}:${bdas.passwd}"/>
 			<!--arg value="-F &quot;module=@${destfile}&quot;" /-->
 			<!--arg value="-F &quot;module=@${dist}/${addon.path}.jar&quot;" /-->
-			<arg value="-F 'module=@${dist}/${addon.path}.jar'" />
-			<!--arg value="${bdas.protocol}://${bdas.user}:${bdas.passwd}@${bdas.host}${bdas.ws}" /-->
-			<arg value="${bdas.protocol}://${bdas.host}${bdas.ws}" />
+			<arg value="-F module=@${destfile}" />
+
+			<arg value=" ${bdas.url}" />
 		</exec>
 	</target>
 
