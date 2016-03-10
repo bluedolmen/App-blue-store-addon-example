@@ -5,7 +5,7 @@ This repository contains code example to create your own addon for Blue AppStore
 ## Pre-requisities
 
 In order to build and publish your addon to appstore.bluedolmen.com, you will need :
-* An account on appstore.bluedolmen.com
+* An account on appstore.bluedolmen.com, contact us at contact@bluedolmen.com
 * ant build tools
 This repository provide a zip version of curl for windows.
 
